@@ -1,4 +1,9 @@
-# Ng50
+# My books
+
+Cette application est développée grâce à la formation sur OpenClassroom "Développez les applications Web avec Angular". Fier de suivre cette formidable formation.
+
+#yusufheri64 
+@yusufheri64 @enywork @Team243
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
