@@ -1,3 +1,19 @@
-<p>
-  single-book works!
-</p>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="row">
+      <div class="col-xs-4">
+        <img style="max-width:400px;" *ngIf="book.photo" [src]="book.photo">
+        <img style="max-width:400px;height: 200px;margin-top: 30px;" *ngIf="!book.photo"
+          src="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png">
+      </div>
+      <div class="col-xs-8">
+        <div class="row">
+          <h1>{{ book.title }}</h1>
+          <h3>{{ book.author }}</h3>
+          <p>{{ book.synopsis }}</p>
+        </div>
+        <button class="btn btn-important" (click)="onBack()">Retour à la liste</button>
+      </div>
+    </div>
+  </div>
+</div>

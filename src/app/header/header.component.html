@@ -1,3 +1,29 @@
-<p>
-  header works!
-</p>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="active">
+        <a routerLink="books">Livres</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li routerLinkActive="active">
+        <a routerLink="auth/signup" *ngIf="!isAuth">Créer un compte</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="auth/signin" *ngIf="!isAuth">Connexion</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="auth/signin" (click)="onSignOut()" *ngIf="isAuth">Déconnexion</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron">
+  <div class="container">
+    <h1>Angular, awesome framework!</h1>
+    <p>Application dévelopée grâce au cours d'Angular sur le site OpenClassroom.</p>
+    <p><a class="btn btn-primary btn-lg"
+        href="https://openclassrooms.com/fr/courses/4668271-developpez-des-applications-web-avec-angular/" role="button"
+        target="_blank">Accéder au cours »</a></p>
+  </div>
+</div>
